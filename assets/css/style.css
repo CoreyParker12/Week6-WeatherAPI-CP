@@ -22,7 +22,7 @@ header {
 #sidebar-container {
     display: flex;
     flex-direction: column;
-    flex-basis: 2;
+    flex-basis: 30%;
     padding: 25px 30px 0 25px;
 }
 
@@ -50,7 +50,16 @@ header {
 #sidebar-button button {
     width: 60%;
     height: 30px;
+}
 
+#recent-buttons {
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+#recent-buttons button {
+    width: 60%;
+    height: 30px;
 }
 
 /* MAIN CONTENT */
@@ -63,7 +72,11 @@ header {
 /* CITY */
 
 #city-container {
+    padding: 25px 0 25px 0;
+}
 
+.city-styling {
+    padding: 10px 0 10px 0;
 }
 
 /* FORECAST */
