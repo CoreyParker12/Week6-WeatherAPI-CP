@@ -1,16 +1,18 @@
 body {
     font-family: "Open Sans";
+    background-color: #d1d1d1;
 }
 
 h1 {
     text-align: center;
     font-size: 60px;
     font-weight: bold;
+    color: white;
 }
 
 header {
     padding: 20px 0 20px 0;
-    background-color: gray;
+    background-color: #5e82a0;
 }
 
 #body-container {
@@ -22,7 +24,7 @@ header {
 #sidebar-container {
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
+    flex-basis: 20%;
     padding: 25px 30px 0 25px;
 }
 
@@ -67,20 +69,114 @@ header {
 #main-container {
     display: flex;
     flex-direction: column;
+    flex-basis: 60%;
+    padding: 25px 0 25px 0px;
 }
 
 /* CITY */
 
+#city {
+    font-size: 30px;
+}
+
 #city-container {
-    padding: 25px 0 25px 0;
+    padding: 25px 0 25px 25px;
+    border: 5px solid white;
+    border-radius: 5px;
+    background-color: #5e82a0;
+    color: white;
 }
 
 .city-styling {
+    display: flex;
+    flex-direction: row;
     padding: 10px 0 10px 0;
 }
 
 /* FORECAST */
 
-#city-container {
+#forecast-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.day-align {
+    text-align: center;
+}
+
+.forecast {
+    padding: 20px 30px 20px 30px;
+    margin: 30px 20px 0px 0px;
+    border: 5px solid white;
+    border-radius: 5px;
+    background-color: #5e82a0;
+    color: white;
+}
+
+.forecast-styling {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 10px 0px;
+}
+
+ .icon-styling {
+    text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1700px) {
+    .forecast {
+        padding: 10px 20px 10px 20px;
+    }
+}
+
+@media screen and (max-width: 1530px) {
+    .forecast {
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .forecast {
+        padding: 10px 40px 10px 40px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .forecast {
+        padding: 10px 30px 10px 30px;
+
+    }
+
+    #city-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    .forecast {
+        padding: 10px 20px 10px 20px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    
+    h1 {
+        font-size: 30px;
+    }
+   
+    .forecast {
+        padding: 10px 80px 10px 80px;
+
+    }
+
+    #city-container {
+        width: 80%;
+    }
 }
