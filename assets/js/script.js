@@ -153,7 +153,6 @@ function runWeather(getCoords) {
      city.text(data.name);
 
      let getWeather = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long + "&units=imperial&appid=" + apiKey;
-     console.log(getWeather)
      
      fetch(getWeather)
      .then(function (response) {
