@@ -13,6 +13,7 @@ let wind = $('#wind');
 let humidity = $('#humidity');
 let uvIndex = $('#uv-index');
 let iconT = $('#iconT');
+let displayTodayDate = $('#todayDate');
 
 //Sets up variables for 5 day forecast
 let dayOne = $('#dayOne');
@@ -66,6 +67,8 @@ dayTwo.html(dateTwo);
 dayThree.html(dateThree);
 dayFour.html(dateFour);
 dayFive.html(dateFive);
+
+displayTodayDate.html(todayDate);
 
 
 // Function that triggers the click event to load weather data 
