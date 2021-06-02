@@ -21,7 +21,7 @@ function submit() {
 
   localStorage.setItem('city', JSON.stringify(recentCity));
 
-  let getCoords = "http://api.openweathermap.org/data/2.5/weather?q=" + cityVal + "&appid=" + apiKey + "&units=imperial";
+  let getCoords = "https://api.openweathermap.org/data/2.5/weather?q=" + cityVal + "&appid=" + apiKey + "&units=imperial";
 
   runWeather(getCoords);
   showRecents();
