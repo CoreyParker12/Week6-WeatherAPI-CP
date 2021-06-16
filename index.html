@@ -1,183 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Dashboard</title>
 
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 
-    <!-- jQuery Link-->
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-    crossorigin="anonymous">
-    </script>
+        <!-- jQuery Link-->
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+        </script>
 
-    <!-- Moment JS Link-->
-    <script src="./assets/js/moment.min.js"></script>
+        <!-- Moment JS Link-->
+        <script src="./assets/js/moment.min.js"></script>
 
-</head>
-<body>
+    </head>
+    <body>
 
-    <header>
-        <h1>WEATHER DASHBOARD</h1>
-    </header>
+        <header>
+            <h1>WEATHER DASHBOARD</h1>
+        </header>
 
-    <div id="body-container">
+        <div id="body-container">
 
-        <section id="sidebar-container">
+            <section id="sidebar-container">
 
-            <div id="sidebar-title">
-                SEARCH FOR A CITY:
-            </div>
-
-            <div id="sidebar-searchbar">
-                <input type="text"></input>
-            </div>
-
-            <div id="sidebar-button">
-                <button>SEARCH</button>
-            </div>
-
-            <div id="recent-buttons">
-                
-            </div>
-
-        </section>
-
-        <!-- LOCAL WEATHER-->
-        <!-- RESULTS OF SEARCH TOO-->
-
-        <div id="main-container">
-            <section id="city-container">
-                <div class="city-styling">
-                    <p id="city"></p>
-                    <div><img id="iconT" src=""></div>
+                <div id="sidebar-title">
+                    SEARCH FOR A CITY:
                 </div>
-                <div>
-                    <p id="todayDate"></p>
+
+                <div id="sidebar-searchbar">
+                    <input type="text"></input>
                 </div>
-                <div>
+
+                <div id="sidebar-button">
+                    <button>SEARCH</button>
+                </div>
+
+                <div id="recent-buttons">
+                    
+                </div>
+
+            </section>
+
+            <!-- LOCAL WEATHER-->
+            <!-- RESULTS OF SEARCH TOO-->
+
+            <div id="main-container">
+                <section id="city-container">
                     <div class="city-styling">
-                        <p>Temperature:&nbsp</p>
-                        <p id="temp"></p>
+                        <p id="city"></p>
+                        <div><img id="iconT" src=""></div>
                     </div>
-                    <div class="city-styling">
-                        <p>Wind Speed:&nbsp</p>
-                        <p id="wind"></p>
+                    <div>
+                        <p id="todayDate"></p>
                     </div>
-                    <div class="city-styling">
+                    <div>
+                        <div class="city-styling">
+                            <p>Temperature:&nbsp</p>
+                            <p id="temp"></p>
+                        </div>
+                        <div class="city-styling">
+                            <p>Wind Speed:&nbsp</p>
+                            <p id="wind"></p>
+                        </div>
+                        <div class="city-styling">
+                            <p>Humidity:&nbsp</p>
+                            <p id="humidity"></p>
+                        </div>
+                        <div class="city-styling">
+                            <p>UV Index:&nbsp</p>
+                            <p id="uv-index"></p>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- 5 DAY FORECAST -->
+
+            <section id="forecast-container">
+                <div class="forecast">
+                    <p class="day-align" id="dayOne"></p>
+                    <div class="icon-styling">
+                        <img id="dayOneIcon" src="">
+                    </div>
+                    <div class="forecast-styling">
+                        <p>Temp:&nbsp</p>
+                        <p id="dayOneTemp"></p>
+                    </div>
+                    <div class="forecast-styling">
                         <p>Humidity:&nbsp</p>
-                        <p id="humidity"></p>
+                        <p id="dayOneHum"></p>
                     </div>
-                    <div class="city-styling">
-                        <p>UV Index:&nbsp</p>
-                        <p id="uv-index"></p>
+                    <div class="forecast-styling">
+                        <p>Wind:&nbsp</p>
+                        <p id="dayOneWind"></p>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <p class="day-align" id="dayTwo"></p>
+                    <div class="icon-styling">
+                        <img id="dayTwoIcon" src="">
+                    </div>
+                    <div class="forecast-styling">
+                        <p>Temp:&nbsp</p>
+                        <p id="dayTwoTemp"></p>
+                    </div>
+                    <div class="forecast-styling">
+                        <p>Humidity:&nbsp</p>
+                        <p id="dayTwoHum"></p>
+                    </div>
+                    <div class="forecast-styling">
+                        <p>Wind:&nbsp</p>
+                        <p id="dayTwoWind"></p>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <p class="day-align" id="dayThree"></p>
+                    <div class="icon-styling">
+                        <img id="dayThreeIcon" src="">
+                    </div>
+                    <div class="forecast-styling">
+                        <p>Temp:&nbsp</p>
+                        <p id="dayThreeTemp"></p>
+                    </div>
+                    <div class="forecast-styling">
+                        <p>Humidity:&nbsp</p>
+                        <p id="dayThreeHum"></p>
+                    </div>
+                    <div class="forecast-styling">
+                        <p>Wind:&nbsp</p>
+                        <p id="dayThreeWind"></p>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <p class="day-align" id="dayFour"></p>
+                    <div class="icon-styling">
+                        <img id="dayFourIcon" src="">
+                    </div>
+                    <div class="forecast-styling">
+                        <p>Temp:&nbsp</p>
+                        <p id="dayFourTemp"></p>
+                    </div>
+                    <div class="forecast-styling">
+                        <p>Humidity:&nbsp</p>
+                        <p id="dayFourHum"></p>
+                    </div>
+                    <div class="forecast-styling">
+                        <p>Wind:&nbsp</p>
+                        <p id="dayFourWind"></p>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <p class="day-align" id="dayFive"></p>
+                    <div class="icon-styling">
+                        <img id="dayFiveIcon" src="">
+                    </div>
+                    <div class="forecast-styling">
+                        <p>Temp:&nbsp</p>
+                        <p id="dayFiveTemp"></p>
+                    </div>
+                    <div class="forecast-styling">
+                        <p>Humidity:&nbsp</p>
+                        <p id="dayFiveHum"></p>
+                    </div>
+                    <div class="forecast-styling">
+                        <p>Wind:&nbsp</p>
+                        <p id="dayFiveWind"></p>
                     </div>
                 </div>
             </section>
-
-        <!-- 5 DAY FORECAST -->
-
-        <section id="forecast-container">
-            <div class="forecast">
-                <p class="day-align" id="dayOne"></p>
-                <div class="icon-styling">
-                    <img id="dayOneIcon" src="">
-                </div>
-                <div class="forecast-styling">
-                    <p>Temp:&nbsp</p>
-                    <p id="dayOneTemp"></p>
-                </div>
-                <div class="forecast-styling">
-                    <p>Humidity:&nbsp</p>
-                    <p id="dayOneHum"></p>
-                </div>
-                <div class="forecast-styling">
-                    <p>Wind:&nbsp</p>
-                    <p id="dayOneWind"></p>
-                </div>
-            </div>
-            <div class="forecast">
-                <p class="day-align" id="dayTwo"></p>
-                <div class="icon-styling">
-                    <img id="dayTwoIcon" src="">
-                </div>
-                <div class="forecast-styling">
-                    <p>Temp:&nbsp</p>
-                    <p id="dayTwoTemp"></p>
-                </div>
-                <div class="forecast-styling">
-                    <p>Humidity:&nbsp</p>
-                    <p id="dayTwoHum"></p>
-                </div>
-                <div class="forecast-styling">
-                    <p>Wind:&nbsp</p>
-                    <p id="dayTwoWind"></p>
-                </div>
-            </div>
-            <div class="forecast">
-                <p class="day-align" id="dayThree"></p>
-                <div class="icon-styling">
-                    <img id="dayThreeIcon" src="">
-                </div>
-                <div class="forecast-styling">
-                    <p>Temp:&nbsp</p>
-                    <p id="dayThreeTemp"></p>
-                </div>
-                <div class="forecast-styling">
-                    <p>Humidity:&nbsp</p>
-                    <p id="dayThreeHum"></p>
-                </div>
-                <div class="forecast-styling">
-                    <p>Wind:&nbsp</p>
-                    <p id="dayThreeWind"></p>
-                </div>
-            </div>
-            <div class="forecast">
-                <p class="day-align" id="dayFour"></p>
-                <div class="icon-styling">
-                    <img id="dayFourIcon" src="">
-                </div>
-                <div class="forecast-styling">
-                    <p>Temp:&nbsp</p>
-                    <p id="dayFourTemp"></p>
-                </div>
-                <div class="forecast-styling">
-                    <p>Humidity:&nbsp</p>
-                    <p id="dayFourHum"></p>
-                </div>
-                <div class="forecast-styling">
-                    <p>Wind:&nbsp</p>
-                    <p id="dayFourWind"></p>
-                </div>
-            </div>
-            <div class="forecast">
-                <p class="day-align" id="dayFive"></p>
-                <div class="icon-styling">
-                    <img id="dayFiveIcon" src="">
-                </div>
-                <div class="forecast-styling">
-                    <p>Temp:&nbsp</p>
-                    <p id="dayFiveTemp"></p>
-                </div>
-                <div class="forecast-styling">
-                    <p>Humidity:&nbsp</p>
-                    <p id="dayFiveHum"></p>
-                </div>
-                <div class="forecast-styling">
-                    <p>Wind:&nbsp</p>
-                    <p id="dayFiveWind"></p>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
-</div>
-    <script src="./assets/js/script.js"></script>
-</body>
-
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>
