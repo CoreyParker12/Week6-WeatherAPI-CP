@@ -1,4 +1,4 @@
-//Weather API Key
+// Weather API Key
 let apiKey = "5bf9c1a715803d8ecc4d803eb5d55d43";
 
 // Sets up the sidebar buttons and inputs
@@ -69,7 +69,6 @@ dayFour.html(dateFour);
 dayFive.html(dateFive);
 
 displayTodayDate.html(todayDate);
-
 
 // Function that triggers the click event to load weather data 
 function submit() {
