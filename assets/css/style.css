@@ -1,3 +1,5 @@
+/* BODY STYLING */
+
 body {
     font-family: "Open Sans";
     background-color: #d1d1d1;
@@ -9,6 +11,8 @@ h1 {
     font-weight: bold;
     color: white;
 }
+
+/* HEADER */
 
 header {
     padding: 20px 0 20px 0;
