@@ -11,4 +11,6 @@ I can be contacted at coreyparker012@gmail.com
 
 ![Home page for Weather Dashboard](./assets/images/weather-dash-img.JPG)
 
+![Responsive view for Weather Dashboard](./assets/images/weather-dash-img-responsive.JPG)
+
 
