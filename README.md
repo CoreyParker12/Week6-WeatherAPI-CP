@@ -7,4 +7,8 @@ The technologies used in this applciation are HTML, CSS, JS, and the Open Weathe
 
 Link to live program: https://coreyparker12.github.io/Week6-WeatherAPI-CP/
 
+I can be contacted at coreyparker012@gmail.com
+
 ![Home page for Weather Dashboard](./assets/images/weather-dash-img.JPG)
+
+
